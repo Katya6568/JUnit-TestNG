@@ -11,6 +11,7 @@ public class CashbackHackServiceTest {
 
         org.junit.Assert.assertEquals(expected, actual);
     }
+
     @org.junit.Test
     public void shouldGetRemainIfAmountEqualsBoundary() {
         CashbackHackService service = new CashbackHackService();
@@ -19,8 +20,9 @@ public class CashbackHackServiceTest {
         int expected = 0;
         int actual = service.remain(amount);
 
-        org.junit.Assert.assertEquals (actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
+
     @org.junit.Test
     public void shouldGetRemainIfAmountZero() {
         CashbackHackService service = new CashbackHackService();
@@ -29,8 +31,9 @@ public class CashbackHackServiceTest {
         int expected = 1000;
         int actual = service.remain(amount);
 
-        org.junit.Assert.assertEquals (actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
+
     @org.junit.Test
     public void shouldGetRemainIfAmountLessOneBoundary() {
         CashbackHackService service = new CashbackHackService();
@@ -39,8 +42,9 @@ public class CashbackHackServiceTest {
         int expected = 1;
         int actual = service.remain(amount);
 
-        org.junit.Assert.assertEquals (actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
+
     @org.junit.Test
     public void shouldGetRemainIfNextBoundary() {
         CashbackHackService service = new CashbackHackService();
@@ -49,9 +53,7 @@ public class CashbackHackServiceTest {
         int expected = 999;
         int actual = service.remain(amount);
 
-        org.junit.Assert.assertEquals (actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
-
-
 
 }
